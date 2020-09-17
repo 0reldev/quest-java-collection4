@@ -22,6 +22,7 @@ public class Thanos {
         Flower rose = new Flower("Rose");
 
         Comparator<Hero> comparator = new Comparator<Hero>() {
+
             @Override
             public int compare(Hero orig, Hero compare) {
                 return orig.getName().compareTo(compare.getName());
@@ -40,6 +41,7 @@ public class Thanos {
         System.out.println("'begonia' contained in the TreeMap: " + party.containsValue(begonia) + ".\n");
 
         for (Hero hero : party.keySet()) {
+
             Flower flower = party.get(hero);
             System.out.println(hero.getName() + ": " + flower.getName());
         }
